@@ -1,0 +1,63 @@
+hostname =c.tieba.baidu.com, tieba.baidu.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn, e.189.cn, ifac*.iqiyi.com, *bilibili.com, manga.bilibili.com, zt.wps.cn, api.weibo.cn, pay.sc.weibo.com, weibo.com, m.weibo.cn, yuba.douyu.com, weather-data.apple.com, api.weather.com, app.bilibili.com, 
+
+
+#TieBa
+https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+#tieba
+^https?:\/\/tieba\.baidu\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
+
+# 获取京东Cookie. 
+^https:\/\/(api\.m|me-api)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?) url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# 获取钢镚签到body. 
+^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/hy\/h5\/m\/appSign\? url script-request-body https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+#iQIYI
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+#10000
+^https:\/\/wapside.189.cn:9001\/api\/home\/sign url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
+
+#telecomInfinity
+^https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do url script-request-header https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/telecomInfinity.js
+
+#Manga
+https:\/\/manga\.bilibili\.com\/.*\.User\/GetWallet url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
+
+#bilibili
+^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
+
+#tieba
+^https?:\/\/tieba\.baidu\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
+
+#wps
+^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+
+#weibo
+https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid url script-request-header https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/weibo.js
+https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? url script-request-header https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/weibo.js
+
+#weibo
+https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid url script-request-header https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/weibo.js
+https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? url script-request-header https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/weibo.js
+
+#weibo
+https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/weibo/weiboSTCookie.js
+
+#weibo
+https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/weibo/weiboSTCookie.js
+
+#哔哩哔哩大会员特权领取cookie
+https:\/\/api.bilibili.com\/x\/vip\/privilege\/receive url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/privilegeReceive.js
+
+#哔哩哔哩番剧监控cookie
+https?:\/\/app.bilibili.com\/x\/v2\/space\/bangumi url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/bangumiMonitor.js
+
+#斗鱼鱼吧获取cookie
+^https://yuba.douyu.com/wbapi/web/group/myFollow? url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/douyu/yubaSign.js
+
+#微博超话获取
+^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button|page) url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js
+
+#彩云
+https:\/\/((weather-data\.apple)|(api.weather))\.com url script-request-header https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
