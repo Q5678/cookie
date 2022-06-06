@@ -291,6 +291,10 @@ https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign url script-request-body https:/
 ^https:\/\/.+zhuishushenqi\.com\/* url script-request-body https://raw.githubusercontent.com/XidNDD/2020scripts/master/zscdbSign.js
 #知音漫客
 ^https:\/\/getconfig-globalapi\.zymk\.cn\/app_api\/* url script-request-body https://raw.githubusercontent.com/XidNDD/2020scripts/master/zymkSign.js
+#贴吧
+^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
+^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
+
 
 
 #photonmang
