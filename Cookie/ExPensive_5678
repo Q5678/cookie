@@ -1,8 +1,8 @@
 #!name=❏  港澳台番剧自动切换地区
 #!desc=Surge 4.7+ 远程脚本配置，哔哩哔哩, 港澳台番剧自动切换地区 & 显示豆瓣评分
 
-[Rule]
-IP-CIDR,203.107.1.1/24,REJECT,no-resolve
+#[Rule]
+#IP-CIDR,203.107.1.1/24,REJECT,no-resolve
 #RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingSE.list,港台𝑭ā𝒏 𝑱ù
 
 [Script]
