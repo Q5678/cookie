@@ -1,7 +1,6 @@
-#****************************
 #Quantumult X 远程脚本配置 :
-#****************************
-#[rewrite_local]
+
+# > Policy自动切换
 ^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/offline\/version)\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 
 #可选, 适用于搜索指定地区的番剧
